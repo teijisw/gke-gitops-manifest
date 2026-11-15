@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - deployment.yaml
+images:
+  - name: web-image-placeholder
+    newName: asia-northeast1-docker.pkg.dev/myhandson-514603/gitops-repo/web-app
+    newTag: v1
